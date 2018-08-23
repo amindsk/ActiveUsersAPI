@@ -1,0 +1,5 @@
+{
+    "_comment": "Set the database connectionURI and the API listening PORT here or use the default from environment variables",
+    "connectionString": "postgres://postgres:root@localhost:5432/usersdb",
+    "port": 3000
+}
