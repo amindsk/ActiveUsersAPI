@@ -1,0 +1,26 @@
+{
+  "name": "activeusersapi",
+  "version": "1.0.0",
+  "description": "Jobbatical backend task",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amindsk/ActiveUsersAPI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amindsk/ActiveUsersAPI/issues"
+  },
+  "homepage": "https://github.com/amindsk/ActiveUsersAPI#readme",
+  "dependencies": {
+    "config": "^2.0.1",
+    "express": "^4.16.3",
+    "knex": "^0.15.2",
+    "pg": "^7.4.3"
+  }
+}
