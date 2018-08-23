@@ -38,12 +38,17 @@ npm install
 In the project open [default.json](https://github.com/amindsk/ActiveUsersAPI/blob/master/config/default.json) placed in configs direcotry and change the database connection string to connect it to your desired database, you can also change the port number where API shall listen for requests and send its responses.  
 NOTE: Please skip this step if you want to fetch connection string and the port number from environment variable.
 
-### Starting the API
+### Starting the API locally from CMD
 In the command line tool navigate into the project directory and run following command to run the API
 ```
 npm run start
 ```
-  
+
+### Starting the API from docker
+In <Dockerfile> change the WORKDIR to your desired directory where you want to copy all of the API files, open your favourite cmmand line tool and type below commands accordingly
+* docker build -t <your username>/active-user-api .
+* docker run -p 3001:3000 -d <your username>/active-user-api
+
 ##### Hooray! You have started the API successfully, now you can access its routes, the most common tool to acccess and check API routes is postman, go ahead, download the tool and install it, [here](https://www.getpostman.com/) is the link to its download page along with the documentation on how to use this tool.
   
 ## API Routes 

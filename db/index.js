@@ -1,9 +1,7 @@
 /*
 File: db/index.js
 Includes: Queries and functions to get data from database
-Comments: Temporary tables or Joins could also be used for querying data in a singe transaction
-          but on a larger database the response time of the API got increase which could also be
-          increased while manipulating data to extract information in the defined way.
+P.S: Avoiding Temporary tables and Joins to make response efficient in production with larger data.
 */
 
 //A "batteries included" SQL query builder.
@@ -14,7 +12,7 @@ const config = require('config');
 const knex = knexJS({
     client: 'pg',
     //Extract connection URI from environement variable or from configuration file if not exists in environment variable.
-    connection: process.env.DATABASE_URL || config.get('connectionString'),
+    connection: process.env.POSTGRES_DB || config.get('connectionString'),
     pool: {
         min: 0,
         max: 10
